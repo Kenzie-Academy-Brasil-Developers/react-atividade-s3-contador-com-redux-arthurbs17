@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { addNumber, subNumber } from "../../modules/counter/action";
+import { Container } from "./styles";
 
 const Counter = () => {
   const dispatch = useDispatch();
@@ -12,10 +13,10 @@ const Counter = () => {
   };
 
   return (
-    <div>
+    <Container>
       <button onClick={handleSubNumber}>-</button>
       <button onClick={handleAddNumber}>+</button>
-    </div>
+    </Container>
   );
 };
 
